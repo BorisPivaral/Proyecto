@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Delius+Unicase:wght@700&display=swap');
+/*Propiedades de la pagina*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../images/background.jpg");
+}
+
+/*Prodiedades del header y Menu*/
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 10%;
+    background-color: #191621;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    max-width: 65px;
+    background-color: #191621;
+}
+
+.navlinks{
+    list-style: none;
+    background-color: #191621;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+   
+}
+
+.navlinks li a{
+    transition:  all 0.3s ease 0s;
+    
+}
+
+.navlinks li a:hover{
+    color: #8a63ff;
+    background-color: rgb(250, 255, 181);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+header button{
+    padding: 9px 25px;
+    color: rgb(253, 255, 230);
+    background-color: #8a63ff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:  all 0.3s ease 0s;
+}
+
+header button:hover{
+    background-color: rgb(250, 255, 181);
+    color: black;
+}
+
+li, a, button{
+    font-family: 'Delius Unicase', cursive;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(250, 255, 181);
+    text-decoration: none;
+    background-color: #191621;
+}
+
+/*Propiedades del Body*/
+
+
+
+.grid{ /*Grid Principal*/
+    display: grid;
+    grid-template-columns: 15% 75% 10%;
+    grid-template-rows: 50% 50%;
+}
+
+.grid div{
+    padding: 50px;
+}
+
+.contenido{
+    grid-row:1/3;
+    grid-column: 2;
+}
+
+.contenido{
+    margin: auto;
+}
+
+.contenido img{
+    display: flex;
+    margin-left: 175px;
+    border-radius: 2%;
+}
+
+.red img{
+    max-width: 50px;
+}
+
+.contenido p{
+    text-align: justify;
+}
+
+.contenido h1{
+    text-align: center;
+}
+
+.logop{
+    max-width: 200px;
+}
+
+.grid .redes{ /*Grid secundario donde se encuentran los enlaces a las redes sociales*/
+    padding: 0;
+    margin-right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.redes a{
+    background: none;
+}
+
+.redes{
+    grid-row: 1/3;
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+    background-color: #8a63ff;
+    display: block;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+    cursor: pointer;
+}
+
+.redes h1{
+    text-align: center;
+    font-family: 'Delius Unicase', cursive;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.red{
+    align-items: center;
+    color: rgb(250, 255, 181);
+}
+
+.red:hover{
+    color: black;
+    background-color: rgb(250, 255, 181);
+    transition:  all 0.3s ease 0s;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+}
+
+/*Propiedades de los textos*/
+.titulo{
+    color: rgb(253, 255, 230);
+    font-family: 'Delius Unicase', cursive;
+    font-size: 16pt;
+}
+
+.parrafo{
+    color: rgb(253, 255, 230);
+    font-size: 14pt;
+    font-family: 'Comfortaa', cursive;
+}
+
+.slogan{
+    color: rgb(250, 255, 181);
+    text-align: center;
+    font-family: 'Delius Unicase', cursive;
+    font-size: 16pt;
+}
+
+/*Propiedades del footer*/
+
+footer{
+    padding: 50px 10%;
+    background-color: #191621;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    color: #8a63ff;
+    font-size: 14pt;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
